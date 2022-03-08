@@ -1,0 +1,196 @@
+.body {
+  font-family: 'Alfa Slab One', cursive;
+}
+
+#title {
+  background-color: #ff4c68;
+  color: #fff;
+}
+
+/* COMBAK: adding 7% padding for title img on bottom */
+.container-fluid {
+  padding: 3% 15% 7%;
+}
+
+/* COMBAK: styling the title text h1 */
+h1 {
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+h2 {
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 3rem;
+  line-height: 1.5;
+
+}
+
+h3 {
+  font-family: cursive;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+p {
+  color: #8f8f8f;
+/* COMBAK: i have removed the padding 4.5% in paragraph for pricing section card */
+}
+
+/* COMBAK: title-image */
+.title-image {
+  /* COMBAK:  due to absolute positioning, I have changed width 60% to 20% */
+  width: 20%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 30%;
+
+}
+
+/* COMBAK: Navbar brand Title */
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-family: 'Ubuntu-light', cursive;
+  font-size: 1.23rem
+}
+
+.navbar-brand {
+  font-family: 'Ubuntu';
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* COMBAK: download buttons */
+/* COMBAK: create custom class without using bootstrap class names */
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+/* COMBAK: Media Query Section for mobile responsive */
+
+@media(max-width:1028px){
+  .title-image{
+    position: static;
+    transform: rotate(0);
+    width: 60%;
+  }
+  /* COMBAK: It makes not only text center aligned but also the image center aligned */
+  #title{
+    text-align: center;
+  }
+}
+
+/************************************************************************************** Features Section*************************************************************************************/
+/* COMBAK: features */
+#features {
+  padding: 7% 15%;
+  background-color: #fff;
+  position: relative;
+  /* COMBAK: By deleting the "z-index: 1;" doest not affect the title img by the order of HTML and changed position; under the order of flow chart pdf */
+  /* z-index: 1; */
+}
+
+.feature-box {
+  text-align: center;
+  /* COMBAK: for text shortenig in the <p> section*/
+  padding: 5%;
+}
+
+.feature-icon {
+  margin-bottom: 1rem;
+  color: #ef8172;
+}
+
+.feature-icon:hover {
+  color: #ff4c68;
+}
+
+/* how to turn off the anchor tag <a> styling in html */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* testimonial section */
+#testimonials {
+  /* removed padding from testimonials to carousel-items for button */
+  text-align: center;
+  background-color: #ef8172;
+  color: #fff;
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+.carousel-item {
+  padding: 7% 15%;
+}
+
+/* Press section */
+#press {
+  text-align: center;
+  background-color: #ef8172;
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+/**************************************************************************************Pricing Section*************************************************************************************/
+
+
+#pricing{
+  padding: 100px;
+  /* COMBAK: It centers both cards and text above 2 lines */
+  text-align: center;
+}
+.pricing-column{
+  padding: 3% 2%;
+}
+
+
+
+
+/**************************************************************************************cta Section*************************************************************************************/
+
+#cta {
+  background-color: #ff4c68;
+  color: #fff;
+  text-align: center;
+  padding: 7% 20% 3%;
+}
+
+.cta-heading{
+  font-family: 'Alfa Slab One', cursive;
+  /* COMBAK: in course font-size marked us 3.5rem */
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: normal;
+
+}
+/**************************************************************************************footer*************************************************************************************/
+#footer{
+  text-align: center;
+  /* COMBAK: in course padding marked us 7% 15% */
+  padding: 7% 15%;
+}
+.social-icon{
+  /* COMBAK: In course "margin: 20px 10px;" is used instead of "padding" */
+  padding: 0 1% 2%;
+}
